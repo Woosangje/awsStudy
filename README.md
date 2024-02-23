@@ -63,3 +63,4 @@ bin으로 이동하야 Tomcat9 실행 > startup.ext실행하고<br>
 
 
 오라클 연결 본인거 로컬서버로 연결해 사용<br>
+pdf완성, aws설치하고 db실행해보기
