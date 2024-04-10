@@ -36,7 +36,11 @@ jsptext.pem 파일이 있어야 가상 컴퓨터에 로그인 할때 사용<br>
 종료됨 나오면 된다<br>
 8000<br>
 ★core로 설치하면 마우스 작동안된다.<br>
-★ aws 설치절차 pdf보기
+★★★★ aws 설치절차 pdf보기
+> https://mingyucloud.tistory.com/entry/EC2-%EA%B8%B0%EB%B0%98-window-%EC%9B%B9-%EC%84%9C%EB%B2%84-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0
+시작 > Server Manager > add role and features (WEB SERVER (IIS)설치해야 서버작동한다.
+ 
+
 ● 오라클,jdk,톰켓, 외부에서 push되는지 확인<br>
  8000번안쓰고 80번 사용 톰켓 8001 , 80 순으로 입력<br>
 팀장이 이클립스 > 원파는 프로젝트 오른쪽 클릭 > Export > warfile > 톰켓9.0인지 확인 체크박스 전부 on > 바탕화면 war 확장자인지 확인 finish 프로젝트이름.war을 조원들에게 뿌린다.<br>
