@@ -35,35 +35,22 @@ jsptext.pem 파일이 있어야 가상 컴퓨터에 로그인 할때 사용<br>
   인스턴스에 연결: 암호 복붙해서 이름.rdp 에 붙여넣고 실행<br>
 종료됨 나오면 된다<br>
 8000<br>
-★core로 설치하면 마우스 작동안된다.<br>
-★★★★ aws 설치절차 pdf보기
-https://backendcode.tistory.com/141#google_vignette 이걸로 된다. 보안 수정하면 원격연결재시작하고 ip주소 새로입력해야한다.
+★ aws 설치절차 pdf보기
+★★★https://backendcode.tistory.com/141#google_vignette 이걸로 된다.
+보안 수정한게 적용될려면 원격연결재시작, ip주소 새로입력해야한다.
 
-안될경우 https://mingyucloud.tistory.com/entry/EC2-%EA%B8%B0%EB%B0%98-window-%EC%9B%B9-%EC%84%9C%EB%B2%84-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0
-시작 > Server Manager > add role and features (WEB SERVER (IIS)설치해야 서버작동한다.
  
-
-● 오라클,jdk,톰켓, 외부에서 push되는지 확인<br>
  8000번안쓰고 80번 사용 톰켓 8001 , 80 순으로 입력<br>
 팀장이 이클립스 > 원파는 프로젝트 오른쪽 클릭 > Export > warfile > 톰켓9.0인지 확인 체크박스 전부 on > 바탕화면 war 확장자인지 확인 finish 프로젝트이름.war을 조원들에게 뿌린다.<br>
 조원들이 파일을 받아서 aws에올린다.<br>
 
 connectionFull 사용할시 톰켓폴더의/conf/context.xml의 내용을 web.xml에 붙여넣어야 한다.<br>
 
-awsMV의 sys?의 패스워드는 the1234<br>
-자기가 만든 코드 쉐어링<br>
 코드공유 ppt마무리하고<br>
 
 
-C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps<br>
-에 Subway.war 옮기고<br>
-bin으로 이동하야 Tomcat9 실행 > startup.ext실행하고<br>
-주소 http://3.36.65.43/Subway/Main/main.jsp 를 web에서 실행한다.<br>
-
-오라클 연결 본인거 로컬서버로 연결해 사용<br>
-
-★하이디일 경우 원하는 IP를 입력하고 cannot sever나올경우
+★★★aws에서의 하이디 DB세팅 절차
 https://java119.tistory.com/61
-일단 IP를 root Local 로 연결하고 
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'172.10.0.000' IDENTIFIED BY '패스워드'; 를선언하고나서새로운
-root 해당 IP로 DB를 만들면 원하는IP로 만들어진다.
+1 첫번째 세션은 IP를 localhost, ID는 root로 만든다.
+2 CREATE USER 'subroot'@'%' IDENTIFIED BY '비밀번호'; 외부접근을 허용하게 생성해준다.
+3 GRANT ALL PRIVILEGES on DB이름.* to 'subroot'@'%';로 subroot 계정이 모든db와 테이블을 수정할수 있게 해준다.
