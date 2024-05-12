@@ -61,3 +61,9 @@ bin으로 이동하야 Tomcat9 실행 > startup.ext실행하고<br>
 주소 http://3.36.65.43/Subway/Main/main.jsp 를 web에서 실행한다.<br>
 
 오라클 연결 본인거 로컬서버로 연결해 사용<br>
+
+★하이디일 경우 원하는 IP를 입력하고 cannot sever나올경우
+https://java119.tistory.com/61
+일단 IP를 root Local 로 연결하고 
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'172.10.0.000' IDENTIFIED BY '패스워드'; 를선언하고나서새로운
+root 해당 IP로 DB를 만들면 원하는IP로 만들어진다.
