@@ -35,9 +35,9 @@ jsptext.pem 파일이 있어야 가상 컴퓨터에 로그인 할때 사용<br>
   인스턴스에 연결: 암호 복붙해서 이름.rdp 에 붙여넣고 실행<br>
 종료됨 나오면 된다<br>
 8000<br>
-★ aws 설치절차 pdf보기
-★★★https://backendcode.tistory.com/141#google_vignette 이걸로 된다.
-보안 수정한게 적용될려면 원격연결재시작, ip주소 새로입력해야한다.
+★ aws 설치절차 pdf보기<br>
+★★★https://backendcode.tistory.com/141#google_vignette 이걸로 된다.<br>
+보안 수정한게 적용될려면 원격연결재시작, ip주소 새로입력해야한다.<br>
 
  
  8000번안쓰고 80번 사용 톰켓 8001 , 80 순으로 입력<br>
@@ -49,8 +49,8 @@ connectionFull 사용할시 톰켓폴더의/conf/context.xml의 내용을 web.xm
 코드공유 ppt마무리하고<br>
 
 
-★★★aws에서의 하이디 DB세팅 절차
-https://java119.tistory.com/61
-1 첫번째 세션은 IP를 localhost, ID는 root로 만든다.
-2 CREATE USER 'subroot'@'%' IDENTIFIED BY '비밀번호'; 외부접근을 허용하게 생성해준다.
-3 GRANT ALL PRIVILEGES on DB이름.* to 'subroot'@'%';로 subroot 계정이 모든db와 테이블을 수정할수 있게 해준다.
+★★★aws에서의 하이디 DB세팅 절차<br>
+https://java119.tistory.com/61<br>
+1 첫번째 세션은 IP를 localhost, ID는 root로 만든다.<br>
+2 CREATE USER 'subroot'@'%' IDENTIFIED BY '비밀번호'; 외부접근을 허용하게 생성해준다.<br>
+3 GRANT ALL PRIVILEGES on DB이름.* to 'subroot'@'%';로 subroot 계정이 모든db와 테이블을 수정할수 있게 해준다.<br>
